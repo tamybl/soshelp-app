@@ -13,9 +13,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
 } 
 
-header {
-
-}
 
 /* Cabecera */
 
@@ -79,7 +76,7 @@ header {
 
 
 
-.intro {
+.intro, .wrap_benefits {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -87,6 +84,11 @@ header {
     padding: 20px;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.wrap_benefits h2.title {
+    grid-column: 1 / span 3;
+    color: #dc0202;
 }
 
 .logo {
@@ -103,9 +105,45 @@ header {
     margin: 0 auto;
 }
 
+h3.subtitle, h2.title  {
+    text-align: center;
+}
+
+h2.title {
+    font-size: calc(26px + 0.35vw);
+    letter-spacing: 3px;
+}
+
+.intro article p, .wrap_benefits article p {
+    text-align: justify;
+    padding: 5px 10px;
+    margin: 0 0.8em;  
+    line-height: 1.5; 
+}
+
+.photo {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.photo img {
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid #eee;
+    transition: all ease-in .5s;
+}
+
+article:hover .photo img {
+    border: 10px solid #e4b3b1;
+}
+
 @media screen and (max-width: 768px) {
     .navigation {
         min-height: 60px;
-        padding: 0 5%;    
+        padding: 0 15%; 
     }
 }
