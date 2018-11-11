@@ -1,5 +1,6 @@
 *, html {
     box-sizing: border-box;
+    margin: 0 auto;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,6 +12,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
+    margin: 1em;
 } 
 
 
@@ -55,7 +57,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: #666;
     font-size: calc(12px + 0.25vw);
+    padding: 8px 20%;
 }
+
+.navigation .items_nav li a:hover {
+    border: 1px solid #b10000;
+    background: #dc0202;
+    border-radius: 10px;
+    color: #fff;
+}
+
 
 .header_title {
     width: 100%;
@@ -138,11 +149,38 @@ h2.title {
     object-fit: cover;
     border-radius: 50%;
     border: 10px solid #eee;
-    transition: all ease-in .5s;s;
+    transition: all ease-in .5s;
 }
 
 article:hover .photo img {
     border: 10px solid #e4b3b1;
+}
+
+.results {
+    background-image: linear-gradient(to left , #0e627b , #1f7088);
+    color: #fff;
+    font-size: calc(18px + 0.25vw);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 130px;
+}
+
+.results article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results article .number {
+    font-size: calc(34px + 0.3vw);
+    margin: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    min-height: 250px;
+
 }
 
 @media screen and (max-width: 768px) {
