@@ -99,8 +99,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrap_benefits h2.title {
     grid-column: 1 / span 3;
-    color: #dc0202;
 }
+
+section.wrap_benefits > article:nth-child(2) > h3.subtitle {
+    color: #7ac143;
+}
+
+section.wrap_benefits > article:nth-child(4) > h3.subtitle {
+    color: #2494f4;
+}
+
+
+
+
+
+section.wrap_benefits > article:nth-child(2):hover > div > img {
+    border: 10px solid rgba(122, 193, 67, 0.6);
+}
+
+section.wrap_benefits > article:nth-child(3) > h3.subtitle {
+    color: #f48924;
+}
+
+section.wrap_benefits > article:nth-child(3):hover > div > img {
+    border: 10px solid rgba(244, 137, 36, 0.6);
+}
+
+section.wrap_benefits > article:nth-child(4):hover > div > img {
+    border: 10px solid rgba(36, 148, 244, 0.6);
+}
+
 
 .logo {
     display: flex;
@@ -138,7 +166,7 @@ h2.title {
     margin-bottom: 5%;
 }
 
-.photo img {
+article .photo img {
     display: block;
     margin: 0 auto;
     width: 17vw;
@@ -152,9 +180,7 @@ h2.title {
     transition: all ease-in .5s;
 }
 
-article:hover .photo img {
-    border: 10px solid #e4b3b1;
-}
+
 
 .results {
     background-image: linear-gradient(to left , #0e627b , #1f7088);
